@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityShtraf">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/nomera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Государственный регистрационный знак" />
+
+        <EditText
+            android:id="@+id/sts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:hint="Свидетельство о регистрации ТС" />
+
+        <Button
+            android:id="@+id/shtraf_proverka"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Проверить на штрафы" />
+
+        <TextView
+            android:id="@+id/rezultat_shtraf"
+            android:layout_width="match_parent"
+            android:layout_height="467dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/txtSHTRAF"
+            android:layout_width="match_parent"
+            android:layout_height="126dp"
+            android:text="" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
