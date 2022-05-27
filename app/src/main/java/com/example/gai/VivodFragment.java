@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,12 +31,14 @@ public class VivodFragment extends Fragment {
         return fragment;
     }
 
-    public void updateResult(Elements_GAI elements_gai) {
-        this.result = elements_gai;
-        updateInfo();
+    @Override
+    public void onStart() {
+        super.onStart();
+        gos.setText(result.Gos_nomer);
     }
 
-    private void updateInfo() {
-        gos.setText(result.Gos_nomer);
+    public void updateResult(Elements_GAI elements_gai) {
+        this.result = elements_gai;
+        Log.i("data", "get data");
     }
 }

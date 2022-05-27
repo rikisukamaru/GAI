@@ -58,13 +58,11 @@
             android:textStyle="bold"
             android:typeface="normal" />
 
-
-        <TextView
-            android:id="@+id/reztxt"
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="434dp"
+            android:layout_height="wrap_content" >
 
-            android:fontFamily="@font/open_sans"
-            android:textSize="16sp" />
+        </FrameLayout>
+
     </LinearLayout>
 </FrameLayout>
