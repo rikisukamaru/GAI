@@ -42,9 +42,9 @@ public class ShtrafFragment extends Fragment {
                     foundElement.setValue(bd_gai.Search_SH(nomera.getText().toString(),
                             sts.getText().toString(),
                             ""));
-                    Log.i("data", "data was found");
+
                 } catch (NullPointerException ex) {
-                    Log.i("data", "data wasn't found");
+
                     Toast.makeText(getActivity().getApplicationContext(), "Результат не найден", Toast.LENGTH_LONG).show();
                 }
             }
