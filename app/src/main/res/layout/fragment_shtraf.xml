@@ -58,11 +58,13 @@
             android:textStyle="bold"
             android:typeface="normal" />
 
-        <FrameLayout
+        <fragment
+            android:id="@+id/output_frame"
+            android:name="com.example.gai.VivodFragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" >
 
-        </FrameLayout>
+        </fragment>
 
     </LinearLayout>
 </FrameLayout>
