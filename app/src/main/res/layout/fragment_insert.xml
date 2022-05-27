@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsertFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="210dp"
+            android:layout_height="230dp"
+            android:layout_marginStart="70dp"
+            android:src="@drawable/free_icon_add_6337747" />
+
+        <EditText
+            android:id="@+id/gos_nomer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="20sp"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:hint="ГОС НОМЕР"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/sts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20sp"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:hint="СТС"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/fio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20sp"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:hint="ФИО"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/Marka"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20sp"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:hint="МАРКА АВТОМОБИЛЯ"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/nal_sh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20sp"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:hint="ШТРАФ ЕСТЬ?"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/UGON"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20sp"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:hint="Находится в угоне?"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/Vin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20sp"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:hint="VIN"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/btn_ts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20sp"
+            android:background="@drawable/btn_theme"
+            android:fontFamily="@font/open_sans"
+            android:text="Добавить в реестр ГАИ"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</FrameLayout>

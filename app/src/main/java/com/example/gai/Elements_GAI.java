@@ -21,7 +21,7 @@ public class Elements_GAI {
   }
   public String tooString()
   {
-      return String.format("%s\n%s\n%s\n%s\n%s\n%s\n%s\n",Gos_nomer,FIO,STS,Marka,Shtraf,Ugon,VIN);
+      return String.format(Gos_nomer,STS,FIO,Marka,Shtraf,Ugon,VIN);
   }
     public String tooString1()
     {

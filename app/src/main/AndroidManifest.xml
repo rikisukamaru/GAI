@@ -11,26 +11,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GAI">
         <activity
-            android:name=".Search"
-            android:exported="false" />
-        <activity
-            android:name=".Insert_TS"
-            android:exported="false" />
-        <activity
-            android:name=".ActivityUgon"
-            android:exported="false" />
-        <activity
-            android:name=".ActivityShtraf"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

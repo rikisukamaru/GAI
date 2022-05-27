@@ -47,37 +47,7 @@ public class BD_GAI extends SQLiteOpenHelper {
         }
         return foundData;
     }
-    public Elements_GAI Search(String shtraf) {
-        SQLiteDatabase sqLiteDatabase = getWritableDatabase();
 
-        Cursor cursor;
-        cursor = sqLiteDatabase.rawQuery(String.format("SELECT * FROM Shtraf_ugon WHERE Shtraf = '%s';", shtraf), null);
-        // Log.e("debug", cursor.getCount() + " ");
-        Elements_GAI foundData = null;
-
-        if (cursor != null) {
-
-
-            if (cursor.moveToFirst()) {
-                do {
-                    int idColumnIndexGOS = cursor.getColumnIndex("GOS_nomer");
-                    int idColumnIndexSTS = cursor.getColumnIndex("STS");
-                    int idColumnIndexFIO = cursor.getColumnIndex("FIO");
-                    int idColumnIndexMarka = cursor.getColumnIndex("Marka");
-                    int idColumnIndexShtraf = cursor.getColumnIndex("Shtraf");
-                    int idColumnIndexUgon = cursor.getColumnIndex("Ugon");
-                    int idColumnIndexVin = cursor.getColumnIndex("VIN");
-
-
-                    foundData = new Elements_GAI(cursor.getString(idColumnIndexGOS), cursor.getString(idColumnIndexSTS), cursor.getString(idColumnIndexFIO), cursor.getString(idColumnIndexMarka), cursor.getString(idColumnIndexShtraf), cursor.getString(idColumnIndexUgon), cursor.getString(idColumnIndexVin));
-                } while (cursor.moveToNext());
-
-
-                cursor.close();
-            }
-        }
-        return foundData;
-    }
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         sqLiteDatabase.execSQL("CREATE TABLE IF NOT EXISTS Shtraf_ugon (\n" +

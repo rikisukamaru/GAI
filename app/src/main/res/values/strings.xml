@@ -4,4 +4,8 @@
     <string name="view_txt_shtraf">ШТРАФЫ</string>
     <string name="view_txt_ugon">УГОН</string>
     <string name="button_ugon">Проверить на угон</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="proverka_shtrafov">Проверть ТС на угон</string>
+    <string name="vin_project">VIN/Номер кузова</string>
 </resources>

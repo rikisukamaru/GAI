@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".UgonFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/VINN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20sp"
+            android:ems="10"
+            android:inputType="text"
+            android:digits="0,1,2,3,4,5,6,7,8,9"
+            android:fontFamily="@font/open_sans"
+            android:hint="@string/vin_project"
+
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/btnug"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20sp"
+            android:background="@drawable/btn_theme"
+            android:fontFamily="@font/open_sans"
+            android:text="@string/proverka_shtrafov"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="510dp"
+            android:fontFamily="@font/open_sans"
+            android:text=""
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</FrameLayout>
