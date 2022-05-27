@@ -15,10 +15,11 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton btn_main_shtraf;
     private ImageButton btn_main_ugon;
     private ImageButton dob_btn;
-   private ShtrafFragment shtrafFragment = new ShtrafFragment();
+    private ShtrafFragment shtrafFragment = new ShtrafFragment();
     private UgonFragment ugonFragment = new UgonFragment();
     private InsertFragment insertFragment = new InsertFragment();
     private VivodFragment vivodFragment = new VivodFragment();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
         dob_btn = findViewById(R.id.dob_btn);
         btn_main_ugon = findViewById(R.id.button5);
         btn_main_shtraf = findViewById(R.id.button4);
+
+        shtrafFragment.getFoundElement().observe(this, vivodFragment::updateResult);
 
         setNewFragment(shtrafFragment);
         btn_main_shtraf.setOnClickListener(new View.OnClickListener() {

@@ -11,11 +11,15 @@ import android.widget.TextView;
 
 public class VivodFragment extends Fragment {
 
+    private Elements_GAI result;
+    private TextView gos;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View fragment = inflater.inflate(R.layout.fragment_vivod,container,false);
-        TextView gos = fragment.findViewById(R.id.Gos_nom);
+
+        gos = fragment.findViewById(R.id.Gos_nom);
         TextView sts = fragment.findViewById(R.id.textView7);
         TextView fio = fragment.findViewById(R.id.textView9);
         TextView marka = fragment.findViewById(R.id.textView11);
@@ -23,12 +27,15 @@ public class VivodFragment extends Fragment {
         TextView ugn = fragment.findViewById(R.id.textView15);
         TextView vin = fragment.findViewById(R.id.textView17);
 
-   //     BD_GAI bd_gai = new BD_GAI(getActivity().getApplicationContext());
-
-
-
         return fragment;
     }
 
+    public void updateResult(Elements_GAI elements_gai) {
+        this.result = elements_gai;
+        updateInfo();
+    }
 
+    private void updateInfo() {
+        gos.setText(result.Gos_nomer);
+    }
 }

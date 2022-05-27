@@ -12,24 +12,26 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
 
 
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class ShtrafFragment extends Fragment {
+
+    private MutableLiveData<Elements_GAI> foundElement = new MutableLiveData<>();
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-       View fragment = inflater.inflate(R.layout.fragment_shtraf,container,false);
-
+        View fragment = inflater.inflate(R.layout.fragment_shtraf,container,false);
 
         EditText nomera =  fragment.findViewById(R.id.nom);
         EditText sts = fragment.findViewById(R.id.st);
         Button btn_rez =  fragment.findViewById(R.id.shtrafbtn);
         TextView rez_sh = fragment.findViewById(R.id.reztxt);
+
         btn_rez.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -37,9 +39,9 @@ public class ShtrafFragment extends Fragment {
                 BD_GAI bd_gai = new BD_GAI(getActivity().getApplicationContext());
 
                 try {
-                    rez_sh.setText(bd_gai.Search_SH(nomera.getText().toString(),
+                    foundElement.setValue(bd_gai.Search_SH(nomera.getText().toString(),
                             sts.getText().toString(),
-                            "").tooString());
+                            ""));
                 } catch (NullPointerException ex) {
 
                     Toast.makeText(getActivity().getApplicationContext(), "Результат не найден", Toast.LENGTH_LONG).show();
@@ -47,11 +49,10 @@ public class ShtrafFragment extends Fragment {
             }
         });
 
-
         return fragment;
-
-
-
     }
 
+    public LiveData<Elements_GAI> getFoundElement() {
+        return foundElement;
+    }
 }
