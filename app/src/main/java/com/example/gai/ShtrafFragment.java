@@ -7,22 +7,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.FrameLayout;
-import android.widget.TextView;
+
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.LiveData;
-import androidx.lifecycle.MutableLiveData;
-
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class ShtrafFragment extends Fragment {
 
-    private MutableLiveData<Elements_GAI> foundElement = new MutableLiveData<>();
+    private VivodFragment vivodFragment = new VivodFragment();
+    private Elements_GAI foundElement;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -31,6 +24,7 @@ public class ShtrafFragment extends Fragment {
         EditText nomera =  fragment.findViewById(R.id.nom);
         EditText sts = fragment.findViewById(R.id.st);
         Button btn_rez =  fragment.findViewById(R.id.shtrafbtn);
+        View outputFrame = fragment.findViewById(R.id.output_frame);
 
         btn_rez.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,9 +33,9 @@ public class ShtrafFragment extends Fragment {
                 BD_GAI bd_gai = new BD_GAI(getActivity().getApplicationContext());
 
                 try {
-                    foundElement.setValue(bd_gai.Search_SH(nomera.getText().toString(),
+                    foundElement = bd_gai.Search_SH(nomera.getText().toString(),
                             sts.getText().toString(),
-                            ""));
+                            "");
                     Log.i("data", "data was found");
                 } catch (NullPointerException ex) {
                     Log.i("data", "data wasn't found");
@@ -51,9 +45,5 @@ public class ShtrafFragment extends Fragment {
         });
 
         return fragment;
-    }
-
-    public LiveData<Elements_GAI> getFoundElement() {
-        return foundElement;
     }
 }
