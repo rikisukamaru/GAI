@@ -30,8 +30,7 @@ public class UgonFragment extends Fragment {
 
                 BD_GAI bd_gai = new BD_GAI(getActivity().getApplicationContext());
 
-                try {
-                    rez.setText(bd_gai.Search_SH("","",vin.getText().toString()).tooString());
+                try { //rez.setText(bd_gai.Search_SH("","",vin.getText().toString());
                 } catch (NullPointerException ex) {
 
                     Toast.makeText(getActivity().getApplicationContext(), "Результат не найден", Toast.LENGTH_LONG).show();

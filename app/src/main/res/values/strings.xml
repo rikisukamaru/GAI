@@ -8,4 +8,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="proverka_shtrafov">Проверть ТС на угон</string>
     <string name="vin_project">VIN/Номер кузова</string>
+    <string name="prov">ПРОВЕРИТЬ НАЛИЧИЕ ШТРАФА</string>
+    <string name="sts">СТС</string>
+    <string name="gos">ГОСУДАРСТВЕННЫЙ НОМЕР</string>
 </resources>

@@ -11,8 +11,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 public class VivodFragment extends Fragment {
-
-    private Elements_GAI result;
     private TextView gos;
     private TextView sts;
     private TextView fio;
@@ -20,6 +18,7 @@ public class VivodFragment extends Fragment {
     private TextView sht;
     private TextView ugn;
     private TextView vin;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -36,20 +35,15 @@ public class VivodFragment extends Fragment {
         return fragment;
     }
 
-    @Override
-    public void onStart() {
-        super.onStart();
-        gos.setText(result.Gos_nomer);
-        sts.setText(result.STS);
-        fio.setText(result.FIO);
-        marka.setText(result.Marka);
-        sht.setText(result.Shtraf);
-        ugn.setText(result.Ugon);
-        vin.setText(result.VIN);
-    }
 
     public void updateResult(Elements_GAI elements_gai) {
-        this.result = elements_gai;
-       // Log.i("data", "get data");
+        gos.setText(elements_gai.Gos_nomer);
+        sts.setText(elements_gai.STS);
+        fio.setText(elements_gai.FIO);
+        marka.setText(elements_gai.Marka);
+        sht.setText(elements_gai.Shtraf);
+        ugn.setText(elements_gai.Ugon);
+        vin.setText(elements_gai.VIN);
+
     }
 }
