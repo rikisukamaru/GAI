@@ -19,16 +19,7 @@ public class Elements_GAI {
       this.Ugon = Ugon;
       this.VIN = VIN;
   }
-  public Elements_GAI()
-  {
-      Gos_nomer = "";
-      FIO="";
-      Marka ="";
-      STS="";
-      Shtraf="";
-      Ugon= "";
-      VIN="";
-  }
+
   //public String tooString()
   //{
   //    return String.format(Gos_nomer,STS,FIO,Marka,Shtraf,Ugon,VIN);

@@ -5,7 +5,11 @@
       <map>
         <entry key="..\:/Android/GAI/app/src/main/res/drawable/btn_theme.xml" value="0.2595" />
         <entry key="..\:/Android/GAI/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2595" />
+        <entry key="..\:/Android/GAI/app/src/main/res/drawable/la.xml" value="0.1625" />
+        <entry key="..\:/Android/GAI/app/src/main/res/font/kufam.xml" value="0.284375" />
+        <entry key="..\:/Android/GAI/app/src/main/res/font/montserrat_alternates_thin.xml" value="0.14322916666666666" />
         <entry key="..\:/Android/GAI/app/src/main/res/font/montserrat_thin.xml" value="0.284375" />
+        <entry key="..\:/Android/GAI/app/src/main/res/font/open_sans.xml" value="0.14322916666666666" />
         <entry key="..\:/Android/GAI/app/src/main/res/layout/activity_insert_ts.xml" value="0.2" />
         <entry key="..\:/Android/GAI/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Android/GAI/app/src/main/res/layout/activity_search.xml" value="0.25416666666666665" />

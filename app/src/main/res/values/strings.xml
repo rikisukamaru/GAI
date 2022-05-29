@@ -6,9 +6,11 @@
     <string name="button_ugon">Проверить на угон</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="proverka_shtrafov">Проверть ТС на угон</string>
+    <string name="proverka_shtrafov">Проверить ТС на угон</string>
     <string name="vin_project">VIN/Номер кузова</string>
     <string name="prov">ПРОВЕРИТЬ НАЛИЧИЕ ШТРАФА</string>
     <string name="sts">СТС</string>
     <string name="gos">ГОСУДАРСТВЕННЫЙ НОМЕР</string>
+    <string name="MARKAAVTO">МАРКА АВТОМОБИЛЯ:</string>
+    <string name="GOS">ГОС НОМЕР:</string>
 </resources>
