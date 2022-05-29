@@ -31,19 +31,19 @@
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:id="@+id/button5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/dob_btn"
+                    android:layout_width="83dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="?attr/selectableItemBackgroundBorderless"
-                    android:contentDescription="@string/view_txt_ugon"
+                    android:contentDescription="@android:string/VideoView_error_button"
                     android:scaleType="centerInside"
-                    app:srcCompat="@drawable/img" />
+                    app:srcCompat="@drawable/free_icon_clipboard_6139778" />
 
                 <ImageButton
                     android:id="@+id/button4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:contentDescription="@string/view_txt_shtraf"
@@ -51,14 +51,24 @@
                     app:srcCompat="@drawable/icon_shtraf__2_" />
 
                 <ImageButton
-                    android:id="@+id/dob_btn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/button5"
+                    android:layout_width="100dp"
+                    android:layout_height="82dp"
                     android:layout_weight="1"
                     android:background="?attr/selectableItemBackgroundBorderless"
-                    android:contentDescription="@android:string/VideoView_error_button"
+                    android:contentDescription="@string/view_txt_ugon"
                     android:scaleType="centerInside"
-                    app:srcCompat="@drawable/icon_insert" />
+                    app:srcCompat="@drawable/img" />
+
+                <ImageButton
+                    android:id="@+id/imageButton4"
+                    android:layout_width="77dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/black"
+                    android:contentDescription="@string/hello_blank_fragment"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/delete" />
 
             </LinearLayout>
         </com.google.android.material.bottomnavigation.BottomNavigationView>
@@ -73,10 +83,10 @@
             android:layout_marginBottom="70dp"
             app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="0.0"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

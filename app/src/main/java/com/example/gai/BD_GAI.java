@@ -1,9 +1,11 @@
 package com.example.gai;
 
 import android.content.Context;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.view.View;
 
 
 public class BD_GAI extends SQLiteOpenHelper {
@@ -61,6 +63,7 @@ public class BD_GAI extends SQLiteOpenHelper {
                 "VIN TEXT\n" +
                 ");");
 
+
        // sqLiteDatabase.execSQL("INSERT INTO Shtraf_ugon(GOS_nomer, STS,FIO,Marka,Shtraf,Ugon,VIN)
         // values('Е 777 КХ', '2 9 6','Конышев Тимур Рикимарович', 'GAZ', 'Yes', 'No','1 2 3 4 5 6 7 8 9 1')");
        // sqLiteDatabase.execSQL("INSERT INTO Shtraf_ugon(GOS_nomer, STS,FIO,Marka,Shtraf,Ugon,VIN)
@@ -74,6 +77,11 @@ public class BD_GAI extends SQLiteOpenHelper {
 
 
     }
+    public void delete(String gos){
+        SQLiteDatabase sqLiteDatabase = getWritableDatabase();
+        sqLiteDatabase.delete("Shtraf_ugon","Gos_nomer = ?",new String[]{gos});
+    }
+
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int oldVersion, int newVersion) {

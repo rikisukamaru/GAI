@@ -54,9 +54,9 @@ public class ShtrafFragment extends Fragment {
                     foundElement = bd_gai.Search_SH(nomera.getText().toString(),
                             sts.getText().toString(),
                             "");
-                    linearLayout.setVisibility(View.VISIBLE);
-                    updateResult(foundElement);
 
+                    updateResult(foundElement);
+                    linearLayout.setVisibility(View.VISIBLE);
                    // Log.i("data", "data was found");
                 } catch (NullPointerException ex) {
                  //   Log.i("data", "data wasn't found");
@@ -67,6 +67,7 @@ public class ShtrafFragment extends Fragment {
 
         return fragment;
     }
+
     public void updateResult(Elements_GAI elements_gai) {
         gos.setText(elements_gai.Gos_nomer);
         Sts.setText(elements_gai.FIO);

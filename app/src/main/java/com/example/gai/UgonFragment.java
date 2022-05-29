@@ -48,8 +48,9 @@ public class UgonFragment extends Fragment {
 
                 try {
                     foundElement = bd_gai.Search_SH("","",vin.getText().toString());
-                    linearLayout.setVisibility(View.VISIBLE);
+
                     UUpdateResult(foundElement);
+                    linearLayout.setVisibility(View.VISIBLE);
                 } catch (NullPointerException ex) {
 
                     Toast.makeText(getActivity().getApplicationContext(), "Результат не найден", Toast.LENGTH_LONG).show();
